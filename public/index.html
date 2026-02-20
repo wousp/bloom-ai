@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom AI — 基于 2 Sigma 理论的 AI 交互式学习</title>
+    <meta name="description" content="Bloom AI 将 Benjamin Bloom 的 2 Sigma 研究与 AI 结合，让每个人都能享受一对一定制化辅导，学习效率超越 98% 的人。">
+    <meta name="keywords" content="AI学习, Bloom 2 Sigma, 交互式学习, 一对一辅导, AI教育">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">🌱</span>
+                <span class="logo-text">Bloom AI</span>
+            </a>
+            <div class="nav-links">
+                <a href="#theory" class="nav-link">理论基础</a>
+                <a href="#how-it-works" class="nav-link">工作原理</a>
+                <a href="#demo" class="nav-link">体验学习</a>
+            </div>
+            <a href="#demo" class="nav-cta">开始学习 →</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-effects">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                基于 Benjamin Bloom 的 2 Sigma 研究
+            </div>
+            <h1 class="hero-title">
+                用 AI 实现<br>
+                <span class="gradient-text">超越 98% 学生</span><br>
+                的学习方式
+            </h1>
+            <p class="hero-subtitle">
+                1984 年，教育心理学家 Benjamin Bloom 证明了一对一辅导 + 掌握学习法可以让学生领先平均值两个标准差。<br>
+                今天，AI 让每个人都能拥有这种曾经只属于极少数人的学习体验。
+            </p>
+            <div class="hero-actions">
+                <a href="#demo" class="btn-primary">
+                    <span>免费开始学习</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#theory" class="btn-secondary">了解原理</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-value" data-target="98">0</span><span class="stat-suffix">%</span>
+                    <span class="stat-label">超越同龄人比例</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-value" data-target="2">0</span><span class="stat-suffix">σ</span>
+                    <span class="stat-label">领先标准差</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-value" data-target="10">0</span><span class="stat-suffix">x</span>
+                    <span class="stat-label">学习效率提升</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="section problem-section" id="problem">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">问题</span>
+                <h2>传统学习方式正在<span class="gradient-text">浪费你的时间</span></h2>
+                <p class="section-desc">每多花 1 小时读书，你可能少摄入数万比特的信息量</p>
+            </div>
+            <div class="problem-grid">
+                <div class="problem-card" data-animate>
+                    <div class="problem-icon">📚</div>
+                    <h3>书本是死的</h3>
+                    <p>入门书太浅、专业书太深，难度无法定制。你不敢跳章节，怕漏知识。</p>
+                </div>
+                <div class="problem-card" data-animate>
+                    <div class="problem-icon">💬</div>
+                    <h3>普通 AI 聊天框不够</h3>
+                    <p>你不知道该问什么问题。上下文太长会失效，对话无法迁移。</p>
+                </div>
+                <div class="problem-card" data-animate>
+                    <div class="problem-icon">🔧</div>
+                    <h3>本地 Agent 门槛高</h3>
+                    <p>Claude Code 等工具配置复杂，普通人用不了。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Theory Section -->
+    <section class="section theory-section" id="theory">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">理论基础</span>
+                <h2>Bloom 的 <span class="gradient-text">2 Sigma 问题</span></h2>
+                <p class="section-desc">1984 年，Benjamin Bloom 发表了改变教育学的研究</p>
+            </div>
+            <div class="theory-content">
+                <div class="sigma-chart" data-animate>
+                    <div class="chart-title">学生表现分布对比</div>
+                    <div class="chart-bars">
+                        <div class="bar-group">
+                            <div class="bar-label">传统课堂</div>
+                            <div class="bar-track">
+                                <div class="bar bar-traditional" data-width="50"></div>
+                            </div>
+                            <span class="bar-value">平均水平</span>
+                        </div>
+                        <div class="bar-group">
+                            <div class="bar-label">掌握学习法</div>
+                            <div class="bar-track">
+                                <div class="bar bar-mastery" data-width="84"></div>
+                            </div>
+                            <span class="bar-value">+1σ（前 16%）</span>
+                        </div>
+                        <div class="bar-group">
+                            <div class="bar-label">一对一辅导 + 掌握学习法</div>
+                            <div class="bar-track">
+                                <div class="bar bar-tutoring" data-width="98"></div>
+                            </div>
+                            <span class="bar-value">+2σ（前 2%）</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="theory-text" data-animate>
+                    <div class="theory-quote">
+                        <blockquote>
+                            "一对一辅导是人类能设计出来的最好的学习条件。但它太贵、太耗人力了。"
+                        </blockquote>
+                        <cite>— Benjamin Bloom, 1984</cite>
+                    </div>
+                    <div class="theory-points">
+                        <div class="theory-point">
+                            <div class="point-number">01</div>
+                            <div>
+                                <h4>一对一辅导</h4>
+                                <p>导师主动根据学生反馈发起定制化提问，学生只需回答</p>
+                            </div>
+                        </div>
+                        <div class="theory-point">
+                            <div class="point-number">02</div>
+                            <div>
+                                <h4>掌握学习法</h4>
+                                <p>必须对现有知识达到 80-90% 的掌握度，才能进入下一阶段</p>
+                            </div>
+                        </div>
+                        <div class="theory-point">
+                            <div class="point-number">03</div>
+                            <div>
+                                <h4>AI 时代的答案</h4>
+                                <p>AI 大模型是人类历史上第一次可以低成本、无限规模地复制优秀导师</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works Section -->
+    <section class="section how-section" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">工作原理</span>
+                <h2>像有私人导师一样<span class="gradient-text">学任何东西</span></h2>
+                <p class="section-desc">不需要知道该问什么问题，AI 会主动引导你</p>
+            </div>
+            <div class="steps-timeline">
+                <div class="step" data-animate>
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>输入你想学的主题</h3>
+                        <p>任何领域——哲学、编程、金融、物理……AI 会根据你的起点生成第一份定制化学习文档。</p>
+                    </div>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step" data-animate>
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>回答诊断问题</h3>
+                        <p>每份文档末尾有 AI 精心设计的问题。你的回答让 AI 精确判断你的理解深度。</p>
+                    </div>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step" data-animate>
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>AI 自动调整难度</h3>
+                        <p>答得好？下一份文档直接跳到更高难度。有盲区？AI 放慢脚步帮你巩固。永远在你的最佳学习区。</p>
+                    </div>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step" data-animate>
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>快速掌握，超越 98%</h3>
+                        <p>持续循环，难度精准递进。你用几天就能达到别人几周甚至几个月才能达到的水平。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compare Section -->
+    <section class="section compare-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">对比</span>
+                <h2>为什么 Bloom AI <span class="gradient-text">比传统方式更好</span></h2>
+            </div>
+            <div class="compare-table" data-animate>
+                <div class="compare-row compare-header">
+                    <div class="compare-cell"></div>
+                    <div class="compare-cell">📚 读书</div>
+                    <div class="compare-cell">💬 普通 AI</div>
+                    <div class="compare-cell highlight">🌱 Bloom AI</div>
+                </div>
+                <div class="compare-row">
+                    <div class="compare-cell label">难度适配</div>
+                    <div class="compare-cell">❌ 固定</div>
+                    <div class="compare-cell">⚠️ 需自行控制</div>
+                    <div class="compare-cell highlight">✅ 自动调节</div>
+                </div>
+                <div class="compare-row">
+                    <div class="compare-cell label">提问方向</div>
+                    <div class="compare-cell">❌ 无互动</div>
+                    <div class="compare-cell">⚠️ 用户需主动</div>
+                    <div class="compare-cell highlight">✅ AI 主动引导</div>
+                </div>
+                <div class="compare-row">
+                    <div class="compare-cell label">上下文记忆</div>
+                    <div class="compare-cell">❌ 无</div>
+                    <div class="compare-cell">⚠️ 单对话限</div>
+                    <div class="compare-cell highlight">✅ 完整追踪</div>
+                </div>
+                <div class="compare-row">
+                    <div class="compare-cell label">使用门槛</div>
+                    <div class="compare-cell">✅ 低</div>
+                    <div class="compare-cell">✅ 低</div>
+                    <div class="compare-cell highlight">✅ 零门槛</div>
+                </div>
+                <div class="compare-row">
+                    <div class="compare-cell label">效果上限</div>
+                    <div class="compare-cell">📊 平均水平</div>
+                    <div class="compare-cell">📊 因人而异</div>
+                    <div class="compare-cell highlight">📊 前 2%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo / App Section -->
+    <section class="section demo-section" id="demo">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">立即体验</span>
+                <h2>开始你的 <span class="gradient-text">2 Sigma 学习之旅</span></h2>
+                <p class="section-desc">输入任何你想学习的主题，Bloom AI 会为你生成定制化学习路径</p>
+            </div>
+
+            <!-- App Interface -->
+            <div class="app-container" data-animate>
+                <!-- Step 1: Topic Input -->
+                <div class="app-step" id="app-step-1">
+                    <div class="app-input-area">
+                        <div class="input-icon">🎯</div>
+                        <input type="text" id="topic-input" placeholder="你想学什么？例如：维特根斯坦的逻辑哲学、React 框架、量子力学…" autocomplete="off">
+                        <button id="start-btn" class="app-start-btn">
+                            <span>开始学习</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </button>
+                    </div>
+                    <div class="topic-suggestions">
+                        <span class="suggestion-label">热门主题：</span>
+                        <button class="topic-tag" data-topic="维特根斯坦的逻辑哲学">🧠 逻辑哲学</button>
+                        <button class="topic-tag" data-topic="React 前端框架">⚛️ React</button>
+                        <button class="topic-tag" data-topic="量子力学基础">🔬 量子力学</button>
+                        <button class="topic-tag" data-topic="Python 机器学习">🤖 机器学习</button>
+                        <button class="topic-tag" data-topic="博弈论基础">🎲 博弈论</button>
+                    </div>
+                </div>
+
+                <!-- Step 2: Learning Document -->
+                <div class="app-step hidden" id="app-step-2">
+                    <div class="doc-header">
+                        <div class="doc-meta">
+                            <span class="doc-badge">📄 学习文档 #<span id="doc-number">1</span></span>
+                            <span class="doc-topic" id="doc-topic"></span>
+                        </div>
+                        <div class="doc-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="progress-fill"></div>
+                            </div>
+                            <span class="progress-text" id="progress-text">掌握度: 0%</span>
+                        </div>
+                    </div>
+                    <div class="doc-body" id="doc-body">
+                        <!-- AI-generated content appears here -->
+                    </div>
+                    <div class="doc-questions" id="doc-questions">
+                        <h4>📝 诊断问题</h4>
+                        <div id="questions-list">
+                            <!-- Questions appear here -->
+                        </div>
+                        <div class="answer-area">
+                            <textarea id="answer-input" placeholder="在这里写下你的回答……不需要完美，诚实地写出你的理解即可。"></textarea>
+                            <button id="submit-answer" class="btn-primary">
+                                <span>提交回答，生成下一份文档</span>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Loading State -->
+                <div class="app-step hidden" id="app-loading">
+                    <div class="loading-animation">
+                        <div class="loading-brain">🧠</div>
+                        <div class="loading-text">AI 正在分析你的回答，生成下一份定制化学习文档……</div>
+                        <div class="loading-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content" data-animate>
+                <h2>每多等一天，<br>就多浪费一天的学习潜力</h2>
+                <p>Benjamin Bloom 证明了方法论。AI 提供了技术。<br>现在只差你的一次点击。</p>
+                <a href="#demo" class="btn-primary btn-large">
+                    <span>立即开始学习</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">🌱</span>
+                    <span class="logo-text">Bloom AI</span>
+                    <p>基于 Benjamin Bloom 2 Sigma 研究<br>让每个人都能拥有最高效的学习方式</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>产品</h4>
+                        <a href="#theory">理论基础</a>
+                        <a href="#how-it-works">工作原理</a>
+                        <a href="#demo">开始学习</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>研究</h4>
+                        <a href="https://en.wikipedia.org/wiki/Bloom%27s_2_sigma_problem" target="_blank">Bloom 2 Sigma 论文</a>
+                        <a href="#theory">掌握学习法</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Bloom AI. 让学习回归它应有的样子。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
