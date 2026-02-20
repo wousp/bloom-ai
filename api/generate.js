@@ -2,7 +2,7 @@ const { GoogleAuth } = require("google-auth-library");
 
 const PROJECT_ID = process.env.GCP_PROJECT_ID || "macbook-488008";
 const LOCATION = process.env.GCP_LOCATION || "us-central1";
-const MODEL_ID = "gemini-2.0-flash-001";
+const MODEL_ID = "gemini-2.5-flash";
 const ENDPOINT = `https://${LOCATION}-aiplatform.googleapis.com/v1/projects/${PROJECT_ID}/locations/${LOCATION}/publishers/google/models/${MODEL_ID}:generateContent`;
 
 const SYSTEM_PROMPT = `你是 Bloom AI 的核心教学引擎，一个基于 Benjamin Bloom 的 2 Sigma 研究设计的 AI 导师。
