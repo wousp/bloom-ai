@@ -32,6 +32,10 @@ const SYSTEM_PROMPT = `你是 Bloom AI 的核心教学引擎，一个基于 Benj
 
 async function getAccessToken() {
     const credentials = JSON.parse(process.env.GCP_SERVICE_ACCOUNT_KEY);
+    // Fix: Ensure newlines in private_key are correctly unescaped
+    if (credentials.private_key) {
+        credentials.private_key = credentials.private_key.replace(/\\n/g, '\n');
+    }
     const auth = new GoogleAuth({ credentials, scopes: ["https://www.googleapis.com/auth/cloud-platform"] });
     const client = await auth.getClient();
     const tokenResponse = await client.getAccessToken();
