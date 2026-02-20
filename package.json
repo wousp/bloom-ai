@@ -1,0 +1,9 @@
+{
+  "name": "bloom-ai",
+  "version": "1.0.0",
+  "description": "基于 Benjamin Bloom 2 Sigma 理论的 AI 交互式学习平台",
+  "private": true,
+  "dependencies": {
+    "google-auth-library": "^9.14.0"
+  }
+}
